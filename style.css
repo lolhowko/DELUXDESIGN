@@ -1,0 +1,462 @@
+.header {
+  margin-bottom: 115px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.header__top__tittle {
+  font-family: "bahnschrift";
+  font-size: 14pt;
+  color: #717171;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.header__top__text {
+  font-family: "bahnschrift";
+  font-size: 14pt;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 35px;
+}
+.header__services {
+  padding-left: 15px;
+}
+.header__right {
+  margin-top: 30px;
+  justify-content: end;
+  align-items: end;
+  padding-right: 15px;
+}
+.header__right__top {
+  display: flex;
+  gap: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.header__right__links {
+  display: flex;
+}
+.header__right__link {
+  text-decoration: none;
+  color: white;
+  font-size: 12pt;
+}
+.header__right__link__button {
+  height: 42px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.header__right__link__button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.header__logo {
+  height: 42px;
+  border: none;
+  background: white;
+  font-size: 42px;
+}
+.header__logo__text {
+  text-decoration: none;
+  color: #858585;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding-top: 30px;
+}
+.header__contacts__box {
+  display: flex;
+  gap: 30px;
+}
+.header__contacts__text {
+  font-family: "bahnschrift";
+  font-size: 14pt;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+}
+.header__content__box {
+  display: flex;
+  gap: 13px;
+}
+.content {
+  padding-top: 150px;
+  padding-bottom: 180px;
+}
+.content__tittle {
+  font-size: 18pt;
+  padding-bottom: 30px;
+}
+.content__text {
+  font-size: 14pt;
+  padding-bottom: 90px;
+  width: 1200px;
+}
+.content__text_2 {
+  padding-bottom: 150px;
+}
+.content__top {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.content__top__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content__top__img {
+  align-items: center;
+}
+.content__top__tittle {
+  font-size: 18pt;
+}
+.content__top__button {
+  border: none;
+  font-size: 16pt;
+  background-color: #d2d2d2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: end;
+}
+.content__top__button__link {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  font-size: 18pt;
+}
+.content__top__button:hover {
+  background-color: #aaaaaa;
+}
+.content__top__texts {
+  font-size: 12pt;
+}
+.content__items {
+  padding-top: 180px;
+}
+.content__items__tittles {
+  display: flex;
+  gap: 30px;
+  font-size: 18pt;
+  padding-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content__items__imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.content__items__imgs__box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.content__bottombutton {
+  margin-top: 40px;
+  padding-left: 560px;
+  padding-right: 20px;
+  border: none;
+  font-size: 16pt;
+  background-color: #d2d2d2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.content__bottombutton__text {
+  text-decoration: none;
+  color: black;
+}
+.content__bottombutton:hover {
+  background-color: #aaaaaa;
+}
+
+.projects {
+  padding-bottom: 180px;
+}
+.projects__tittle {
+  text-align: center;
+  font-size: 18pt;
+  padding-bottom: 40px;
+}
+
+.slideshow-container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.partners {
+  height: 452px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.partners__tittle {
+  padding-bottom: 120px;
+  font-size: 18pt;
+  color: white;
+  text-align: center;
+}
+.partners__items {
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+  flex-wrap: wrap;
+}
+.partners__items__box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.partners__item {
+  height: 55px;
+}
+
+.reviews {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.reviews__tittle {
+  font-size: 18pt;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.articles {
+  padding-bottom: 180px;
+}
+.articles__tittle {
+  font-size: 18pt;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.articles__box {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+.articles__box__text {
+  font-size: 18pt;
+}
+.articles__box__imgs {
+  display: flex;
+}
+.articles__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer {
+  background-color: #cacaca;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left__box {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  padding-bottom: 154px;
+}
+.footer__logo__img {
+  color: white;
+}
+.footer__button {
+  width: 368px;
+  height: 42px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 16pt;
+}
+.footer__button:hover {
+  background-color: #9c9c9c;
+  color: #fff;
+  transform: scale(1.02);
+}
+.footer__right__box {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  justify-content: end;
+  text-align: end;
+  align-items: end;
+}
+.footer__box {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.footer__text {
+  font-size: 18pt;
+  color: black;
+}
+.footer__text_grey {
+  color: #717171;
+}
+.footer__text__link {
+  text-decoration: none;
+  color: black;
+  font-size: 18pt;
+}
+.footer__link {
+  padding-top: 10px;
+}
+.footer__link__img {
+  fill: #5b5b5b;
+}
+
+.b-popup {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
+
+.b-popup .b-popup-content {
+  margin: 40px auto 0px auto;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  background-color: #c5c5c5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.price__items {
+  display: flex;
+}
+.price__item {
+  width: 100px;
+}
+.portfolio__item {
+  display: flex;
+}
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/bahnschrift.eot?#iefix") format("embedded-opentype"), url("./fonts/bahnschrift.woff2") format("woff2"), url("./fonts/bahnschrift.woff") format("woff"), url("./fonts/bahnschrift.ttf") format("truetype"), url("./fonts/bahnschrift.svg#bahnschrift") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.center {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+body {
+  font-family: "Bahnschrift", sans-serif;
+  line-height: 30px;
+}/*# sourceMappingURL=style.css.map */
