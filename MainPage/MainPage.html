@@ -410,13 +410,49 @@
             class="footer__logo__img"
           />
         </a>
-        <button class="footer__button">ОБРАТНЫЙ ЗВОНОК</button>
-
-        <div class="b-popup">
-          <div class="b-popup-content">
-              Text in Popup
-          </div>
+        <button class="footer__button">
+          <a href="#openModal" class="footer__button__link">ОБРАТНЫЙ ЗВОНОК</a>
+        </button>
       </div>
+
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="popup__container">
+            <div class="popup__content">
+              <div class="popup__right-side">
+                <a href="#close" title="Close" class="close">×</a>
+
+                <div class="popup__topic-tittle">Отправьте нам сообщение</div>
+
+                <!-- Какой-то дополнительный текст -->
+                <p class="popup__topic-text">
+                  Если у вас есть какие-то вопросы или предложения по
+                  сотрудничеству - заполните форму ниже и мы вам перезвоним.
+                </p>
+
+                <!-- Форма обратной связи -->
+                <form action="#">
+                  <!-- Каждый input для выравнивания вкладываем в блок input-box -->
+                  <div class="popup__input-box">
+                    <input type="text" placeholder="Ваше имя" />
+                  </div>
+                  <div class="popup__input-box">
+                    <input type="text" placeholder="Введите email" />
+                  </div>
+                  <div class="popup__input-box">
+                    <input type="text" placeholder="Введите телефон" />
+                  </div>
+                  <div class="popup__input-box">
+                    <textarea placeholder="Сообщение"></textarea>
+                  </div>
+                  <div class="popup__button">
+                    <input type="button" value="Отправить" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="footer__right__box">
@@ -483,8 +519,7 @@
               </svg>
             </a>
             <a href="#" class="footer__link">
-              <img src="/img/icons8-whatsapp.png"
-              />
+              <img src="/img/icons8-whatsapp.png" />
             </a>
           </div>
         </div>
@@ -493,4 +528,9 @@
   </body>
 
   <script src="/slides.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogAIdc5N3HI="
+    crossorigin="anonymous"
+  ></script>
 </html>

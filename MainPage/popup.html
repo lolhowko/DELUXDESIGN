@@ -12,13 +12,13 @@
   <body>
 
     <!-- Контейнер выравнивает по ширине и по центру -->
-    <div class="container">
+    <div class="popup__container">
 
       <!-- content содержит содержимое формы -->
-      <div class="content">
+      <div class="popup__content">
 
         <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
-        <div class="left-side">
+        <div class="popup__left-side">
           <!-- <div class="address details">
 
             Вместо классов: название шрифтовых иконок (fontawesome.com)
@@ -30,25 +30,25 @@
             <div class="text-two">Пресненская наб., 8 стр. 1</div>
           </div> -->
          
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Телефон</div>
-            <div class="text-one">8 900 245 16 30  Александр</div>
-            <div class="text-two">8 906 037 95 56  Светлана</div>
+          <div class="popup__phone details">
+            <i class="popup__fas popup__fa-phone-alt"></i>
+            <div class="popup__topic">Телефон</div>
+            <div class="popup__text-one">8 900 245 16 30  Александр</div>
+            <div class="popup__text-one">8 906 037 95 56  Светлана</div>
           </div>
-          <div class="email details">
-            <i class="fas fa-envelope"></i>
-            <div class="topic">Email</div>
-            <div class="text-one">info@deluxedesign.ru</div>
-            <div class="text-two">partner@deluxedesign.ru</div>
+          <div class="popup__email details">
+            <i class="popup__fas popup__fa-envelope"></i>
+            <div class="popup__topic">Email</div>
+            <div class="popup__text-one">info@deluxedesign.ru</div>
+            <div class="popup__text-one">partner@deluxedesign.ru</div>
           </div>
         </div>
 
         <!-- Правая колонка: сама форма -->
-        <div class="right-side">
+        <div class="popup__right-side">
 
           <!-- Заголовок для формы -->
-          <div class="topic-text">Отправьте нам сообщение</div>
+          <div class="popup__topic-text">Отправьте нам сообщение</div>
 
           <!-- Какой-то дополнительный текст -->
           <p>
@@ -60,19 +60,19 @@
           <form action="#">
 
             <!-- Каждый input для выравнивания вкладываем в блок input-box -->
-            <div class="input-box">
+            <div class="popup__input-box">
               <input type="text" placeholder="Ваше имя" />
             </div>
-            <div class="input-box">
+            <div class="popup__input-box">
               <input type="text" placeholder="Введите email" />
             </div>
-            <div class="input-box">
+            <div class="popup__input-box">
               <input type="text" placeholder="Введите телефон" />
             </div>
-            <div class="input-box message-box">
+            <div class="popup__input-box message-box">
               <textarea placeholder="Сообщение"></textarea>
             </div>
-            <div class="button">
+            <div class="popup__button">
               <input type="button" value="Отправить" />
             </div>
           </form>
@@ -87,3 +87,70 @@
     ></script>
   </body>
 </html
+
+
+
+<!-- Контейнер выравнивает по ширине и по центру -->
+<div id="openModal" class="popup__container">
+  <!-- content содержит содержимое формы -->
+  <div class="popup__content">
+    <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
+    <div class="popup__left-side">
+      <!-- <div class="address details">
+
+    Вместо классов: название шрифтовых иконок (fontawesome.com)
+    <i class="fas fa-map-marker-alt"></i>
+
+    topic - заголовок, text-one, text-two - текст
+    <div class="topic">Адрес</div>
+    <div class="text-one">г. Москва</div>
+    <div class="text-two">Пресненская наб., 8 стр. 1</div>
+  </div> -->
+
+      <div class="popup__phone details">
+        <i class="popup__fas popup__fa-phone-alt"></i>
+        <div class="popup__topic">Телефон</div>
+        <div class="popup__text-one">8 900 245 16 30 Александр</div>
+        <div class="popup__text-one">8 906 037 95 56 Светлана</div>
+      </div>
+      <div class="popup__email details">
+        <i class="popup__fas popup__fa-envelope"></i>
+        <div class="popup__topic">Email</div>
+        <div class="popup__text-one">info@deluxedesign.ru</div>
+        <div class="popup__text-one">partner@deluxedesign.ru</div>
+      </div>
+    </div>
+
+    <!-- Правая колонка: сама форма -->
+    <div class="popup__right-side">
+      <!-- Заголовок для формы -->
+      <div class="popup__topic-text">Отправьте нам сообщение</div>
+
+      <!-- Какой-то дополнительный текст -->
+      <p>
+        Если у вас есть какие-то вопросы или предложения по
+        сотрудничеству - заполните форму ниже и мы вам перезвоним.
+      </p>
+
+      <!-- Форма обратной связи -->
+      <form action="#">
+        <!-- Каждый input для выравнивания вкладываем в блок input-box -->
+        <div class="popup__input-box">
+          <input type="text" placeholder="Ваше имя" />
+        </div>
+        <div class="popup__input-box">
+          <input type="text" placeholder="Введите email" />
+        </div>
+        <div class="popup__input-box">
+          <input type="text" placeholder="Введите телефон" />
+        </div>
+        <div class="popup__input-box message-box">
+          <textarea placeholder="Сообщение"></textarea>
+        </div>
+        <div class="popup__button">
+          <input type="button" value="Отправить" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
