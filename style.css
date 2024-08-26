@@ -90,6 +90,11 @@
   display: flex;
   gap: 13px;
 }
+.header__content__img {
+  height: 500px;
+  width: 850px;
+}
+
 .content {
   padding-top: 150px;
   padding-bottom: 180px;
@@ -186,28 +191,37 @@
 
 .projects {
   padding-bottom: 180px;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
 }
 .projects__tittle {
   text-align: center;
   font-size: 18pt;
   padding-bottom: 40px;
 }
-
-.slideshow-container {
+.projects__img {
+  height: 390px;
+  width: 670px;
+  vertical-align: middle;
+}
+.projects__content {
+  display: flex;
+  gap: 50px;
+}
+.projects__slideshow-container {
   box-sizing: border-box;
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
-.mySlides {
+.projects__mySlides, .projects__myslides_2 {
   display: none;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
+.projects__prev, .projects__next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -219,22 +233,32 @@
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  /* On hover, add a black background color with a little bit see-through */
 }
-
-/* Position the "next button" to the right */
-.next {
+.projects__prev:hover, .projects__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.projects__prev_2, .projects__next_2 {
+  cursor: pointer;
+  position: sticky;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.projects__next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
+.projects__text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -243,18 +267,7 @@
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+.projects__dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -264,14 +277,10 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.active,
-.dot:hover {
+.projects__dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
+.projects__fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
