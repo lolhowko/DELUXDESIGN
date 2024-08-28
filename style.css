@@ -84,6 +84,9 @@
   color: black;
   padding-top: 10px;
 }
+.header__contacts__text_num:hover {
+  transform: scale(1.1);
+}
 .header__content__box {
   display: flex;
   gap: 13px;
@@ -188,84 +191,60 @@
 }
 
 .projects {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 180px;
-  /* Hide the images by default */
+  flex-wrap: wrap;
+  /* Slideshow container */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
-  /* Caption text */
-  /* The dots/bullets/indicators */
-  /* Fading animation */
+  /* On hover, add a grey background color */
 }
 .projects__tittle {
+  font-size: 20pt;
   text-align: center;
-  font-size: 18pt;
   padding-bottom: 40px;
+  padding-top: 20px;
+}
+.projects__mySlides1, .projects__mySlides2 {
+  display: none;
 }
 .projects__img {
-  height: 390px;
-  width: 670px;
-  vertical-align: middle;
-}
-.projects__content {
-  display: flex;
-  gap: 50px;
+  width: 630px;
+  height: 360px;
 }
 .projects__slideshow-container {
-  box-sizing: border-box;
-  max-width: 1000px;
   position: relative;
   margin: auto;
-}
-.projects__mySlides, .projects__myslides_2 {
-  display: none;
 }
 .projects__prev, .projects__next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  /* On hover, add a black background color with a little bit see-through */
-}
-.projects__prev:hover, .projects__next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.projects__prev_2, .projects__next_2 {
-  cursor: pointer;
-  position: sticky;
-  top: 50%;
-  width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
+.projects__prev {
+  margin-left: -60px;
+}
+.projects__next {
+  margin-right: -60px;
+}
 .projects__next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.projects__text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.projects__prev:hover, .projects__next:hover {
+  transform: scale(1.2);
 }
-.projects__dot {
+.projects__dot1, .projects__dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -275,23 +254,14 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.projects__dot:hover {
+.projects__dot1:hover, .projects__dot2:hover {
   background-color: #717171;
 }
-.projects__fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+
+.active {
+  background-color: #717171;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 .partners {
   height: 452px;
   background-color: rgb(0, 0, 0);
@@ -418,6 +388,9 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 18pt;
+}
+.footer__text__link_num:hover {
+  transform: scale(1.1);
 }
 .footer__link {
   padding-top: 10px;
@@ -664,7 +637,7 @@
 }
 
 .header__portfolio__content {
-  height: 500px;
+  height: 350px;
   background-color: rgb(181, 181, 181);
   display: flex;
   flex-direction: column;
@@ -673,6 +646,7 @@
   align-items: center;
 }
 .header__portfolio__tittle {
+  padding-top: 20px;
   font-size: 30pt;
   color: black;
 }
@@ -724,9 +698,6 @@
   color: rgb(180, 180, 180);
 }
 
-.price {
-  padding-top: 100px;
-}
 .price__tittle {
   font-size: 30pt;
   padding-bottom: 90px;
@@ -754,7 +725,6 @@
 }
 .price__th_foot {
   font-size: 16pt;
-  height: 120px;
 }
 .price__tr {
   justify-content: center;
@@ -769,16 +739,24 @@
 .price__td_main {
   text-align: left;
   padding-left: 40px;
+  font-weight: bold;
+}
+.price__tfoot {
+  height: 70px;
 }
 .price__bottom {
   padding-top: 180px;
   padding-bottom: 180px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .price__bottom__left__tittle {
   font-size: 20pt;
   padding-bottom: 70px;
+}
+.price__bottom__left__ul {
+  padding-left: 20px;
 }
 .price__bottom__left__li {
   font-size: 16pt;
@@ -786,7 +764,7 @@
 .price__bottom__right {
   height: 225px;
   width: 850px;
-  border: 1px solid black;
+  border: 2px solid black;
   padding-right: 10px;
   font-size: 16pt;
   display: flex;
