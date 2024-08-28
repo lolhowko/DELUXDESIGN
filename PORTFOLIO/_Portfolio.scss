@@ -1,29 +1,166 @@
-.price{
-
-    &__tittle{}
-
-    &__items{
-        display: flex;
+.header {
+  &__portfolio {
+    &__content {
+      height: 500px;
+      background-color: rgb(181, 181, 181);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+      align-items: center;
     }
 
-    &__item{
-        width: 100px;
-
-        &__tittle{}
-
-        &__content{
-
-            &__tittle{
-
-                &_span{}
-            }
-
-        }
-
-        &__text{}
+    &__tittle {
+      font-size: 30pt;
+      color: black;
     }
 
-    &__bottomtext{}
+    &__text {
+      font-size: 16pt;
+      color: white;
+    }
+  }
+}
+
+.steps {
+  padding-bottom: 180px;
+
+  &__tittle {
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &__tittle {
+      font-style: 20pt;
+      background-color: black;
+      color: white;
+      width: 345px;
+      text-align: center;
+    }
+
+    &__img {
+      padding-top: 40px;
+      padding-bottom: 30px;
+      height: 60px;
+      width: 60px;
+    }
+
+    &__name {
+      font-size: 18pt;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 16pt;
+      color: rgb(180, 180, 180);
+    }
+  }
+}
+
+.price {
+  padding-top: 100px;
+  &__tittle {
+    font-size: 30pt;
+    padding-bottom: 90px;
+    text-align: center;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+  }
+
+  &__th {
+    height: 60px;
+    font-weight: normal;
+    background: black;
+    color: white;
+    border: 1px solid #dddddd;
+    font-size: 20pt;
+    text-align: center;
+
+    &_main {
+      padding-left: 40px;
+      width: 950px;
+      text-align: left;
+    }
+
+    &_foot {
+      font-size: 16pt;
+      height: 120px;
+    }
+  }
+
+  &__tr {
+    justify-content: center;
+  }
+
+  &__td {
+    height: 60px;
+    border: 1px solid #dddddd;
+    padding-top: 5px;
+    text-align: center;
+    font-style: 14pt;
+
+    &_main {
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+
+  &__bottom {
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      &__tittle {
+        font-size: 20pt;
+        padding-bottom: 70px;
+      }
+
+      &__ul {
+      }
+
+      &__li {
+        font-size: 16pt;
+      }
+    }
+
+    &__right {
+      height: 225px;
+      width: 850px;
+      border: 1px solid black;
+
+      padding-right: 10px;
+      font-size: 16pt;
+      display: flex;
+      text-align: end;
+      justify-content: center;
+      align-items: center;
+
+      line-height: 40px;
+    }
+  }
 }
 
 .portfolio {
@@ -31,12 +168,106 @@
   }
 
   &__tittle {
+    padding-bottom: 40px;
+
+    font-size: 20pt;
   }
 
   &__item {
     display: flex;
+    gap: 20px;
+    padding-bottom: 120px;
   }
 
   &__img {
+  }
+}
+
+.realization {
+  padding-bottom: 180px;
+
+  &__tittle {
+    text-align: center;
+    font-size: 18pt;
+    padding-bottom: 40px;
+  }
+
+  &__img {
+    vertical-align: middle;
+  }
+
+  &__slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  &__mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  &__prev,
+  &__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  /* Position the "next button" to the right */
+  &__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Caption text */
+  &__text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  &__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    &:hover {
+      background-color: #717171;
+    }
+  }
+
+  /* Fading animation */
+  &__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 }

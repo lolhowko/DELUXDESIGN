@@ -27,17 +27,17 @@
 }
 .header__right {
   margin-top: 30px;
-  justify-content: end;
-  align-items: end;
   padding-right: 15px;
 }
 .header__right__top {
   display: flex;
-  gap: 120px;
-  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
 }
 .header__right__links {
   display: flex;
+  background-color: rgb(0, 0, 0);
+  padding-left: 100px;
 }
 .header__right__link {
   text-decoration: none;
@@ -54,18 +54,16 @@
   justify-content: center;
 }
 .header__right__link__button:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .header__logo {
-  height: 42px;
   border: none;
   background: white;
-  font-size: 42px;
 }
 .header__logo__text {
+  font-size: 42pt;
   text-decoration: none;
-  color: #858585;
+  color: rgb(0, 0, 0);
 }
 .header__contacts {
   display: flex;
@@ -296,7 +294,7 @@
 }
 .partners {
   height: 452px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -358,7 +356,7 @@
 }
 
 .footer {
-  background-color: #cacaca;
+  background-color: rgb(0, 0, 0);
   padding-top: 180px;
   padding-bottom: 180px;
   display: flex;
@@ -370,6 +368,9 @@
 }
 .footer__logo {
   padding-bottom: 154px;
+  color: white;
+  font-size: 42pt;
+  text-decoration: none;
 }
 .footer__logo__img {
   color: white;
@@ -383,12 +384,10 @@
 }
 .footer__button__link {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 .footer__button:hover {
-  background-color: #9c9c9c;
-  color: #fff;
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .footer__right__box {
   display: flex;
@@ -410,21 +409,21 @@
 }
 .footer__text {
   font-size: 18pt;
-  color: black;
+  color: white;
 }
 .footer__text_grey {
   color: #717171;
 }
 .footer__text__link {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 18pt;
 }
 .footer__link {
   padding-top: 10px;
 }
-.footer__link__img {
-  fill: #5b5b5b;
+.footer__link:hover {
+  transform: scale(1.1);
 }
 
 .popup {
@@ -526,7 +525,7 @@
   /* Меняем цвет фона при наведении на кнопку */
 }
 .popup__button input[type=button]:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
 }
 
 /* МОБИЛЬНАЯ ВЕРСИЯ */
@@ -664,15 +663,224 @@
   overflow: auto;
 }
 
-.price__items {
+.header__portfolio__content {
+  height: 500px;
+  background-color: rgb(181, 181, 181);
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.price__item {
-  width: 100px;
+.header__portfolio__tittle {
+  font-size: 30pt;
+  color: black;
+}
+.header__portfolio__text {
+  font-size: 16pt;
+  color: white;
+}
+
+.steps {
+  padding-bottom: 180px;
+}
+.steps__tittle {
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.steps__items {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.steps__item__tittle {
+  font-style: 20pt;
+  background-color: black;
+  color: white;
+  width: 345px;
+  text-align: center;
+}
+.steps__item__img {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  height: 60px;
+  width: 60px;
+}
+.steps__item__name {
+  font-size: 18pt;
+  padding-bottom: 20px;
+}
+.steps__item__text {
+  font-size: 16pt;
+  color: rgb(180, 180, 180);
+}
+
+.price {
+  padding-top: 100px;
+}
+.price__tittle {
+  font-size: 30pt;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.price__table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+.price__th {
+  height: 60px;
+  font-weight: normal;
+  background: black;
+  color: white;
+  border: 1px solid #dddddd;
+  font-size: 20pt;
+  text-align: center;
+}
+.price__th_main {
+  padding-left: 40px;
+  width: 950px;
+  text-align: left;
+}
+.price__th_foot {
+  font-size: 16pt;
+  height: 120px;
+}
+.price__tr {
+  justify-content: center;
+}
+.price__td {
+  height: 60px;
+  border: 1px solid #dddddd;
+  padding-top: 5px;
+  text-align: center;
+  font-style: 14pt;
+}
+.price__td_main {
+  text-align: left;
+  padding-left: 40px;
+}
+.price__bottom {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.price__bottom__left__tittle {
+  font-size: 20pt;
+  padding-bottom: 70px;
+}
+.price__bottom__left__li {
+  font-size: 16pt;
+}
+.price__bottom__right {
+  height: 225px;
+  width: 850px;
+  border: 1px solid black;
+  padding-right: 10px;
+  font-size: 16pt;
+  display: flex;
+  text-align: end;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+.portfolio__tittle {
+  padding-bottom: 40px;
+  font-size: 20pt;
 }
 .portfolio__item {
   display: flex;
+  gap: 20px;
+  padding-bottom: 120px;
 }
+.realization {
+  padding-bottom: 180px;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+.realization__tittle {
+  text-align: center;
+  font-size: 18pt;
+  padding-bottom: 40px;
+}
+.realization__img {
+  vertical-align: middle;
+}
+.realization__slideshow-container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.realization__mySlides {
+  display: none;
+}
+.realization__prev, .realization__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  /* On hover, add a black background color with a little bit see-through */
+}
+.realization__prev:hover, .realization__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.realization__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.realization__text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.realization__dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.realization__dot:hover {
+  background-color: #717171;
+}
+.realization__fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 @font-face {
   font-family: "Bahnschrift";
   src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */
