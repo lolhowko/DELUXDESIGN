@@ -1,7 +1,6 @@
 @import "./MainPage/mainPage";
 @import "./PORTFOLIO/Portfolio";
 
-
 @font-face {
   font-family: "Bahnschrift";
   src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */
@@ -27,4 +26,15 @@
 body {
   font-family: "Bahnschrift", sans-serif;
   line-height: 30px;
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 15px;
+  }
+
+  .center {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }

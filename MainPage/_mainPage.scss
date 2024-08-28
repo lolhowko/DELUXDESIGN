@@ -76,7 +76,7 @@
       font-size: 42pt;
       text-decoration: none;
       color: rgb(0, 0, 0);
-      // letter-spacing: -6px;
+      letter-spacing: -5px;
     }
   }
 
@@ -492,6 +492,9 @@
 
   &__link {
     padding-top: 10px;
+    height: 40px;
+    width: 40px;
+
     &:hover {
       transform: scale(1.1);
     }
@@ -624,39 +627,365 @@
 
 /* МОБИЛЬНАЯ ВЕРСИЯ */
 
-/* Меняем стили при ширине экрана меньше 800px */
-@media (max-width: 800px) {
-  /* Теперь форма (правая колонка) будет сверху, а элементы (левая колонка) снизу */
-  .popup {
-    &__content {
-      height: 100%;
-      flex-direction: column-reverse; /* располагаем в колонку и реверсивно */
+@media (max-width: 500px) {
+  /*Стили, на устройствах с максимальной ширеной экрана 500 пикселей и меньше */
+  .header {
+    margin-bottom: 30px;
+
+    &__top {
+      margin-bottom: 30px;
+      flex-wrap: wrap-reverse;
+
+      &__tittle {
+        display: none;
+      }
+
+      &__text {
+        padding-top: 20px;
+        font-size: 8pt;
+        padding-bottom: 0px;
+      }
     }
 
-    /* Внутри левой колонки внутренние элементы располагаем в ряд */
-    &__left-side {
-      margin-top: 50px;
-      flex-direction: row; /* располагаем элементы (адрес, телефон, email) в ряд */
-      width: 100%; /* левая колонка на всю ширину */
-      justify-content: center;
-      flex-wrap: wrap; /* перенос элементов, если не хватит места */
+    &__logo {
+      &__text {
+        font-size: 20pt;
+        letter-spacing: -2px;
+      }
     }
+
+    &__services {
+      padding-left: 0px;
+    }
+
+    &__right {
+      text-align: center;
+
+      &__links {
+        padding-left: 5px;
+      }
+
+      &__link {
+        font-size: 6pt;
+
+        &__button {
+          height: 20px;
+          width: 80px;
+          padding-left: 3px;
+          padding-right: 3px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &__contacts {
+      padding-top: 15px;
+      display: none;
+
+      &__box {
+        display: flex;
+        gap: 15px;
+      }
+
+      &__text {
+        font-size: 8pt;
+        padding-top: 5px;
+      }
+    }
+
+    &__content {
+      &__box {
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+      }
+
+      &__img {
+        height: 160px;
+        width: 200px;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 10pt;
+      padding-bottom: 40px;
+      width: 400px;
+
+      &_2 {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__top {
+      gap: 10px;
+
+      &__item {
+        gap: 10px;
+      }
+
+      &__img {
+        height: 190px;
+        width: 180px;
+      }
+
+      &__tittle {
+        font-size: 12pt;
+      }
+
+      &__button {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 10pt;
+
+        &__link {
+          padding-right: 10px;
+          font-size: 8pt;
+        }
+      }
+
+      &__texts {
+        display: none;
+        font-size: 8pt;
+        width: 180px;
+      }
+    }
+
+    &__items {
+      padding-top: 50px;
+
+      &__tittles {
+        gap: 10px;
+        font-size: 10pt;
+        padding-bottom: 10px;
+      }
+
+      &__imgs {
+        gap: 10px;
+
+        &__box {
+          gap: 10px;
+          justify-content: center;
+        }
+      }
+
+      &__img {
+        width: 180px;
+        height: 150px;
+      }
+    }
+
+    &__bottombutton {
+      margin-top: 20px;
+      padding-left: 300px;
+      padding-right: 10px;
+      font-size: 8pt;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+
+  .projects {
+    padding-bottom: 50px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+
+    &__img {
+      width: 340px;
+      height: 180px;
+    }
+
+    /* Slideshow container */
+    &__slideshow-container {
+      // max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    &__prev,
+    &__next {
+      &__img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &__prev {
+      margin-left: -40px;
+    }
+
+    &__next {
+      margin-right: -40px;
+    }
+
+    &__dot1,
+    &__dot2 {
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  .partners {
+    height: 280px;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    &__tittle {
+      padding-bottom: 40px;
+      font-size: 12pt;
+    }
+
+    &__items {
+      gap: 30px;
+    }
+
+    &__item {
+      height: 30px;
+    }
+  }
+
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 20px;
+    }
+  }
+
+  .articles {
+    padding-bottom: 50px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 20px;
+    }
+
+    &__box {
+      gap: 30px;
+
+      &__tittle {
+        font-size: 8pt;
+      }
+
+      &__imgs {
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+      }
+
+      &__img {
+        width: 300px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__logo {
+      padding-bottom: 20px;
+      font-size: 20pt;
+    }
+
+    &__button {
+      width: 180px;
+      height: 32px;
+      font-size: 8pt;
+    }
+
+    &__right__box {
+      gap: 20px;
+    }
+
+    &__contacts {
+      padding-bottom: 10px;
+    }
+
+    &__box {
+      gap: 10px;
+      padding-bottom: 0px;
+    }
+
+    &__text {
+      font-size: 8pt;
+
+      &__link {
+        font-size: 8pt;
+      }
+    }
+
+    &__link {
+      padding-top: 10px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .popup {
+    &__container {
+      width: 90%;
+    }
+
+    &__content {
+      height: 100%;
+      padding: 10px;
+      box-shadow: 2px 2px 6px 0 rgba(34, 60, 80, 0.2);
+    }
+
     &__details {
-      margin-right: 20px;
+      margin-right: 10px;
+      margin-bottom: 10px;
     }
     &__details:last-child {
       margin-right: 0;
     }
 
-    /* Убираем разделительную линию */
-    &__left-side::before {
-      display: none;
+    &__topic {
+      font-size: 10pt;
+      margin-bottom: 7px; /* отступ снизу 7px */
     }
 
-    /* Правая колонка теперь на всю ширину и не имеет отступа слева */
-    &__right-side {
-      width: 100%;
-      margin-left: 0;
+    /* Заголовок правой колонки */
+    &__topic-tittle {
+      font-size: 12pt;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    &__topic-text {
+      font-size: 8pt;
+    }
+
+    &__input-box {
+      height: 50px; /* по сути задаем высоту input'а */
+      width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+      margin-bottom: 10px; /* отступаем снизу 20px */
+    }
+
+    /* Стили для самой кнопки */
+    &__button input[type="button"] {
+      font-size: 10px;
+      padding: 10px 15px;
     }
   }
 }
@@ -683,95 +1012,4 @@
   opacity: 1; /* делаем окно видимым */
   pointer-events: auto; /* элемент видим для событий мыши */
   overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 30px auto; /* отображение окна по центру */
-  }
-}
-/* Стили для блока с контентом окна */
-.modal-content {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
-}
-@media (min-width: 768px) {
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-}
-/* Стили заголовка окна */
-.modal-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 15px;
-  border-bottom: 1px solid #eceeef;
-}
-.modal-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.5;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-/* Стили кнопки "х" ("Закрыть")  */
-.close {
-  float: right;
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.5;
-  text-decoration: none;
-}
-/* Стили для закрывающей кнопки в фокусе или наведении */
-.close:focus,
-.close:hover {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.75;
-}
-/* Стили блока основного содержимого окна */
-.modal-body {
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 15px;
-  overflow: auto;
 }
