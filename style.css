@@ -811,6 +811,31 @@
   overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
 }
 
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
 .header__portfolio__content {
   height: 350px;
   background-color: rgb(181, 181, 181);
@@ -1034,6 +1059,199 @@
   animation-duration: 1.5s;
 }
 
+@media (max-width: 500px) {
+  br {
+    display: none;
+  }
+  .header__portfolio__content {
+    height: 180px;
+  }
+  .header__portfolio__tittle {
+    padding-top: 14px;
+    font-size: 14pt;
+  }
+  .header__portfolio__text {
+    font-size: 8pt;
+  }
+  .steps {
+    padding-bottom: 50px;
+  }
+  .steps__tittle {
+    font-size: 12pt;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .steps__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  .steps__item {
+    height: 100%;
+  }
+  .steps__item__tittle {
+    font-style: 10pt;
+    width: 120px;
+  }
+  .steps__item__img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  .steps__item__name {
+    font-size: 10pt;
+    padding-bottom: 15px;
+    width: 110px;
+  }
+  .steps__item__text {
+    font-size: 8pt;
+    width: 110px;
+  }
+  .price__tittle {
+    font-size: 12pt;
+    padding-bottom: 40px;
+  }
+  .price__table {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .price__th {
+    height: 20px;
+    font-size: 10pt;
+  }
+  .price__th_main {
+    padding-left: 10px;
+  }
+  .price__th_foot {
+    font-size: 10pt;
+  }
+  .price__td {
+    height: 20px;
+    font-style: 10pt;
+  }
+  .price__td_main {
+    font-size: 10pt;
+    padding-left: 10px;
+    font-weight: normal;
+  }
+  .price__tfoot {
+    height: 30px;
+  }
+  .price__bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .price__bottom__left__tittle {
+    font-size: 10pt;
+    padding-bottom: 15px;
+  }
+  .price__bottom__left__ul {
+    padding-left: 10px;
+  }
+  .price__bottom__left__li {
+    font-size: 10pt;
+  }
+  .price__bottom__right {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    line-height: 20px;
+    padding-right: 10px;
+    font-size: 10pt;
+  }
+  svg {
+    height: 15px;
+    width: 15px;
+  }
+  .portfolio__tittle {
+    padding-bottom: 20px;
+    font-size: 12pt;
+  }
+  .portfolio__item {
+    gap: 10px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .portfolio__img {
+    width: 170px;
+  }
+  .realization {
+    padding-bottom: 50px;
+    /* Hide the images by default */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* Caption text */
+    /* The dots/bullets/indicators */
+    /* Fading animation */
+  }
+  .realization__tittle {
+    font-size: 12pt;
+    padding-bottom: 20px;
+  }
+  .realization__img {
+    vertical-align: middle;
+  }
+  .realization__slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .realization__mySlides {
+    display: none;
+  }
+  .realization__prev, .realization__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* On hover, add a black background color with a little bit see-through */
+  }
+  .realization__prev:hover, .realization__next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .realization__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .realization__text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .realization__dot {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .realization__dot:hover {
+    background-color: #717171;
+  }
+  .realization__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
 @font-face {
   font-family: "Bahnschrift";
   src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */
@@ -1059,7 +1277,7 @@ body {
     line-height: 15px;
   }
   .center {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

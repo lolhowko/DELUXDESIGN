@@ -1013,3 +1013,34 @@
   pointer-events: auto; /* элемент видим для событий мыши */
   overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
 }
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
