@@ -851,7 +851,7 @@
   color: black;
 }
 .header__portfolio__text {
-  font-size: 16pt;
+  font-size: 20pt;
   color: white;
 }
 
@@ -944,8 +944,15 @@
 .price__tfoot {
   height: 70px;
 }
+.price__textbottom {
+  font-size: 16pt;
+  text-align: left;
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
 .price__bottom {
-  padding-top: 180px;
+  padding-top: 160px;
   padding-bottom: 180px;
   display: flex;
   justify-content: space-between;
