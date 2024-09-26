@@ -1,0 +1,170 @@
+.price {
+  &__real {
+    &__left {
+      &__tittle {
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        width: max-content;
+        font-size: 16pt;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+
+      &_text {
+        font-size: 16pt;
+        text-align: right;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__buttonbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: flex-end;
+
+      gap: 10px;
+
+      &_text {
+        font-size: 16pt;
+      }
+
+      &_img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.realization {
+  &__box {
+    display: flex;
+    gap: 40px;
+    margin-top: 180px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    padding-bottom: 50px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__tittle {
+    text-align: center;
+    color: black;
+  }
+
+  &__img {
+    box-sizing: border-box;
+    border: 2px solid #767676;
+  }
+
+  &__bottom {
+    text-align: right;
+    &__tittle {
+      font-size: 16pt;
+      color: #767676;
+      padding-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 20pt;
+
+      &_span {
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+.header__realization {
+  &__content {
+    height: 250px;
+  }
+}
+
+.realization__portfolio {
+  padding-top: 70px;
+
+  &__items {
+
+  }
+
+  &__item {
+    padding-bottom: 70px;
+  }
+
+  &__tittles {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+  }
+
+  &__tittle {
+    font-size: 16pt;
+    font-style: normal;
+
+    &_2 {
+      margin-right: 20px;
+
+      color: #cdcdcd;
+    }
+  }
+
+  &__a {
+    display: inline-block;
+  }
+
+  &__afull {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8%;
+    background: #ccc center no-repeat;
+    background: rgba(0, 0, 0, 0.7) center no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+
+    &:target {
+      display: block;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7) center no-repeat;
+    display: none;
+
+    &__img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+    }
+  }
+}
