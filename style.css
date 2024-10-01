@@ -1547,6 +1547,9 @@
   width: 700px;
 }
 
+.real {
+  padding-top: 180px;
+}
 .real__img__description {
   padding-top: 20px;
   font-size: 16pt;
