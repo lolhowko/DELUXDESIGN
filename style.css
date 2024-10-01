@@ -1547,6 +1547,12 @@
   width: 700px;
 }
 
+.real__img__description {
+  padding-top: 20px;
+  font-size: 16pt;
+  color: #717171;
+}
+
 @font-face {
   font-family: "Bahnschrift";
   src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */
