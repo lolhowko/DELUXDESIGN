@@ -7,4 +7,43 @@
       color: #717171;
     }
   }
+
+  &__options {
+    padding-bottom: 60px;
+
+    &__box {
+      display: flex;
+      padding-bottom: 90px;
+      justify-content: space-between;
+    }
+
+    &__tittle {
+      font-size: 30pt;
+      padding-bottom: 90px;
+      text-align: center;
+    }
+
+    &__div {
+      &_left {
+        text-align: left;
+      }
+      &_middle {
+        text-align: center;
+      }
+      &_right {
+        text-align: right;
+      }
+
+      &__tittle {
+        font-size: 18pt;
+        padding-bottom: 20px;
+      }
+
+      &__text {
+        font-style: 16pt;
+        color: #717171;
+        width: 440px;
+      }
+    }
+  }
 }

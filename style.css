@@ -1555,6 +1555,37 @@
   font-size: 16pt;
   color: #717171;
 }
+.real__options {
+  padding-bottom: 60px;
+}
+.real__options__box {
+  display: flex;
+  padding-bottom: 90px;
+  justify-content: space-between;
+}
+.real__options__tittle {
+  font-size: 30pt;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.real__options__div_left {
+  text-align: left;
+}
+.real__options__div_middle {
+  text-align: center;
+}
+.real__options__div_right {
+  text-align: right;
+}
+.real__options__div__tittle {
+  font-size: 18pt;
+  padding-bottom: 20px;
+}
+.real__options__div__text {
+  font-style: 16pt;
+  color: #717171;
+  width: 440px;
+}
 
 @font-face {
   font-family: "Bahnschrift";
