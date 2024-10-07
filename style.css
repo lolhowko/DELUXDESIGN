@@ -996,7 +996,7 @@
   padding-bottom: 120px;
 }
 .portfolio__img {
-  width: 350px;
+  width: 355px;
   height: 202px;
 }
 .portfolio__img:hover {
@@ -1505,7 +1505,6 @@
   font-style: normal;
 }
 .realization__portfolio__tittle_2 {
-  margin-right: 20px;
   color: #cdcdcd;
 }
 .realization__portfolio__a {
@@ -1585,6 +1584,15 @@
   font-style: 16pt;
   color: #717171;
   width: 440px;
+}
+.real__portfolio__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.real__portfolio__text {
+  font-size: 16pt;
+  text-align: right;
+  padding-right: 5px;
 }
 
 @font-face {

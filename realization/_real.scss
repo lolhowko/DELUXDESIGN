@@ -46,4 +46,18 @@
       }
     }
   }
+
+  &__portfolio {
+
+    &__item {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 16pt;
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
 }
