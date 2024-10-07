@@ -63,4 +63,23 @@
       padding-bottom: 70px;
     }
   }
+
+  &__box {
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__items {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__img {
+      height: 450px;
+      width: 360px;
+    }
+  }
 }

@@ -1597,6 +1597,21 @@
 .real__portfolio__box {
   padding-bottom: 70px;
 }
+.real__box {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.real__box__items {
+  display: flex;
+  gap: 20px;
+}
+.real__box__img {
+  height: 450px;
+  width: 360px;
+}
 
 @font-face {
   font-family: "Bahnschrift";
