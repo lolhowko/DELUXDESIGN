@@ -1594,6 +1594,9 @@
   text-align: right;
   padding-right: 5px;
 }
+.real__portfolio__box {
+  padding-bottom: 70px;
+}
 
 @font-face {
   font-family: "Bahnschrift";
