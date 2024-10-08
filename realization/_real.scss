@@ -71,6 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
 
     &__items {
       display: flex;
@@ -83,7 +84,7 @@
 
       &_big{
         height: 550px;
-        width: 750px;
+        width: 735px;
       }
     }
   }
