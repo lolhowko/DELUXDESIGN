@@ -82,10 +82,25 @@
       height: 450px;
       width: 358px;
 
-      &_big{
+      &_big {
         height: 550px;
         width: 735px;
       }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__text {
+      font-size: 18pt;
+    }
+
+    &__img {
+      width: 670px;
+      height: 405px;
     }
   }
 }

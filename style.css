@@ -1449,7 +1449,7 @@
 
 .realization__box {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   margin-top: 180px;
 }
 .realization__item {
@@ -1616,6 +1616,18 @@
 .real__box__img_big {
   height: 550px;
   width: 735px;
+}
+.real__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.real__info__text {
+  font-size: 18pt;
+}
+.real__info__img {
+  width: 670px;
+  height: 405px;
 }
 
 @font-face {
