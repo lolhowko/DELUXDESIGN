@@ -1610,7 +1610,11 @@
 }
 .real__box__img {
   height: 450px;
-  width: 360px;
+  width: 358px;
+}
+.real__box__img_big {
+  height: 550px;
+  width: 750px;
 }
 
 @font-face {
