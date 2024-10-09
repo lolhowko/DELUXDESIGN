@@ -5,6 +5,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__img {
       height: 690px;
@@ -101,6 +102,101 @@
 
     &__link {
       color: black;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__info {
+      justify-content: center;
+
+      &__img {
+        height: 350px;
+        width: 250px;
+      }
+
+      &__tittle {
+        font-size: 10pt;
+      }
+
+      &__mainbox {
+      }
+      &__box {
+      }
+
+      &__link {
+      }
+    }
+
+    &__numbers {
+      margin-right: 0px;
+      padding-top: 0px;
+    }
+
+    &__box {
+      gap: 20px;
+      align-items: end;
+    }
+
+    &__text {
+      &__link {
+        font-size: 10pt;
+        &_num {
+        }
+      }
+    }
+
+    &__tel {
+      font-size: 10pt;
+    }
+
+    &__adress {
+      gap: 10px;
+
+      &__info {
+        &__tittle {
+          font-size: 10pt;
+          padding-bottom: 10px;
+        }
+
+        &__text {
+          font-size: 10pt;
+        }
+      }
+
+      &__img {
+        height: 250px;
+        width: 250px;
+      }
+    }
+
+    &__team {
+      padding-top: 50px;
+
+      &__img {
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-end;
+
+      padding-top: 50px;
+
+      &__tittle {
+        font-size: 16pt;
+        color: rgb(170, 170, 170);
+      }
+
+      &__link {
+        color: black;
+      }
     }
   }
 }

@@ -213,6 +213,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__box {
@@ -344,10 +345,13 @@
       &__tittle {
         padding-top: 14px;
         font-size: 14pt;
+
+        line-height: 25px;
       }
 
       &__text {
         font-size: 8pt;
+        line-height: 15px;
       }
     }
   }
@@ -409,9 +413,12 @@
     &__th {
       height: 20px;
       font-size: 10pt;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       &_main {
         padding-left: 10px;
+        width: 270px;
       }
 
       &_foot {
@@ -421,7 +428,7 @@
 
     &__td {
       height: 20px;
-      font-style: 10pt;
+      font-size: 10pt;
 
       &_main {
         font-size: 10pt;
@@ -443,7 +450,6 @@
       &__left {
         &__tittle {
           font-size: 10pt;
-          padding-bottom: 15px;
         }
 
         &__ul {
@@ -462,7 +468,22 @@
         line-height: 20px;
 
         padding-right: 10px;
-        font-size: 10pt;
+
+        &__text {
+          font-size: 10pt;
+        }
+      }
+    }
+
+    &__textbottom {
+      font-size: 10pt;
+    }
+
+    &__real {
+      &__buttonbox {
+        &_tittle {
+          font-size: 12pt;
+        }
       }
     }
   }
@@ -488,7 +509,7 @@
     }
 
     &__img {
-      width: 170px;
+      width: 190px;
     }
   }
 
@@ -577,6 +598,24 @@
       -webkit-animation-duration: 1.5s;
       animation-name: fade;
       animation-duration: 1.5s;
+    }
+  }
+
+  .items {
+    &__row {
+      justify-content: center;
+    }
+
+    &__box {
+      &__tittle {
+        font-size: 10pt;
+        padding-bottom: 10px;
+      }
+
+      &__img {
+        width: 280px;
+        height: 200px;
+      }
     }
   }
 }

@@ -37,6 +37,8 @@
   background-color: rgb(0, 0, 0);
   padding-left: 50px;
   padding-right: 15px;
+  position: absolute;
+  right: 5px;
 }
 .header__right__link {
   text-decoration: none;
@@ -58,9 +60,11 @@
 .header__logo {
   border: none;
   background: white;
+  position: relative;
+  right: 489px;
 }
 .header__logo__text {
-  font-size: 37pt;
+  font-size: 39pt;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
@@ -1007,6 +1011,7 @@
 .items__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .items__box {
   display: flex;
@@ -1114,9 +1119,11 @@
   .header__portfolio__tittle {
     padding-top: 14px;
     font-size: 14pt;
+    line-height: 25px;
   }
   .header__portfolio__text {
     font-size: 8pt;
+    line-height: 15px;
   }
   .steps {
     padding-bottom: 50px;
@@ -1164,16 +1171,19 @@
   .price__th {
     height: 20px;
     font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .price__th_main {
     padding-left: 10px;
+    width: 270px;
   }
   .price__th_foot {
     font-size: 10pt;
   }
   .price__td {
     height: 20px;
-    font-style: 10pt;
+    font-size: 10pt;
   }
   .price__td_main {
     font-size: 10pt;
@@ -1190,7 +1200,6 @@
   }
   .price__bottom__left__tittle {
     font-size: 10pt;
-    padding-bottom: 15px;
   }
   .price__bottom__left__ul {
     padding-left: 10px;
@@ -1204,7 +1213,15 @@
     width: 100%;
     line-height: 20px;
     padding-right: 10px;
+  }
+  .price__bottom__right__text {
     font-size: 10pt;
+  }
+  .price__textbottom {
+    font-size: 10pt;
+  }
+  .price__real__buttonbox_tittle {
+    font-size: 12pt;
   }
   svg {
     height: 15px;
@@ -1220,7 +1237,7 @@
     flex-wrap: wrap;
   }
   .portfolio__img {
-    width: 170px;
+    width: 190px;
   }
   .realization {
     padding-bottom: 50px;
@@ -1296,6 +1313,17 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  .items__row {
+    justify-content: center;
+  }
+  .items__box__tittle {
+    font-size: 10pt;
+    padding-bottom: 10px;
+  }
+  .items__box__img {
+    width: 280px;
+    height: 200px;
+  }
 }
 .object {
   padding-bottom: 100px;
@@ -1344,6 +1372,7 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contacts__info__img {
   height: 690px;
@@ -1414,6 +1443,67 @@
   color: black;
 }
 
+@media (max-width: 500px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contacts__info {
+    justify-content: center;
+  }
+  .contacts__info__img {
+    height: 350px;
+    width: 250px;
+  }
+  .contacts__info__tittle {
+    font-size: 10pt;
+  }
+  .contacts__numbers {
+    margin-right: 0px;
+    padding-top: 0px;
+  }
+  .contacts__box {
+    gap: 20px;
+    align-items: end;
+  }
+  .contacts__text__link {
+    font-size: 10pt;
+  }
+  .contacts__tel {
+    font-size: 10pt;
+  }
+  .contacts__adress {
+    gap: 10px;
+  }
+  .contacts__adress__info__tittle {
+    font-size: 10pt;
+    padding-bottom: 10px;
+  }
+  .contacts__adress__info__text {
+    font-size: 10pt;
+  }
+  .contacts__adress__img {
+    height: 250px;
+    width: 250px;
+  }
+  .contacts__team {
+    padding-top: 50px;
+  }
+  .contacts__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    padding-top: 50px;
+  }
+  .contacts__bottom__tittle {
+    font-size: 16pt;
+    color: rgb(170, 170, 170);
+  }
+  .contacts__bottom__link {
+    color: black;
+  }
+}
 .price__real__left__tittle {
   background-color: black;
   color: white;
@@ -1450,6 +1540,7 @@
 .realization__box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 180px;
 }
 .realization__item {
@@ -1546,6 +1637,26 @@
   width: 700px;
 }
 
+@media (max-width: 500px) {
+  .realization__box {
+    justify-content: center;
+  }
+  .realization__tittle {
+    font-size: 10pt;
+  }
+  .realization__img {
+    width: 380px;
+  }
+  .realization__bottom__tittle {
+    font-size: 10pt;
+  }
+  .realization__bottom__text {
+    font-size: 10pt;
+  }
+  .realization__portfolio__tittle {
+    font-size: 10pt;
+  }
+}
 .real {
   padding-top: 180px;
 }
@@ -1561,6 +1672,7 @@
   display: flex;
   padding-bottom: 90px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .real__options__tittle {
   font-size: 30pt;
@@ -1608,6 +1720,7 @@
 .real__box__items {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .real__box__img {
   height: 450px;
@@ -1630,6 +1743,66 @@
   height: 405px;
 }
 
+@media (max-width: 500px) {
+  .real {
+    padding-top: 50px;
+  }
+  .real__info {
+    gap: 20px;
+  }
+  .real__info__text {
+    font-size: 10pt;
+  }
+  .real__info__img {
+    width: 380px;
+    height: 200px;
+  }
+  .real__img__description {
+    font-size: 10pt;
+    width: 280px;
+  }
+  .real__options__tittle {
+    font-size: 12pt;
+    padding-bottom: 30px;
+  }
+  .real__options__box {
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .real__options__div__tittle {
+    font-size: 10pt;
+    padding-bottom: 10px;
+  }
+  .real__options__div__text {
+    font-size: 10pt;
+    width: 280px;
+  }
+  .real__options__div_left {
+    text-align: center;
+  }
+  .real__options__div_middle {
+    text-align: center;
+  }
+  .real__options__div_right {
+    text-align: center;
+  }
+  .real__box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .real__box__items {
+    justify-content: center;
+  }
+  .real__box__img {
+    height: 250px;
+    width: 180px;
+  }
+  .real__box__img_big {
+    height: 250px;
+    width: 380px;
+  }
+}
 @font-face {
   font-family: "Bahnschrift";
   src: url("./fonts/bahnschrift.eot"); /* IE 9 Compatibility Mode */

@@ -45,6 +45,7 @@
   &__box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 180px;
   }
 
@@ -162,6 +163,38 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 700px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .realization {
+    &__box {
+      justify-content: center;
+    }
+
+    &__tittle {
+      font-size: 10pt;
+    }
+
+    &__img {
+      width: 380px;
+    }
+
+    &__bottom {
+      &__tittle {
+        font-size: 10pt;
+      }
+
+      &__text {
+        font-size: 10pt;
+      }
+    }
+
+    &__portfolio {
+      &__tittle {
+        font-size: 10pt;
+      }
     }
   }
 }
