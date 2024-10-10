@@ -1,29 +1,184 @@
-.price{
+.header {
+  &__portfolio {
+    &__content {
+      height: 350px;
+      background-color: rgb(181, 181, 181);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+      align-items: center;
 
-    &__tittle{}
-
-    &__items{
-        display: flex;
+      &_new {
+        height: 300px;
+      }
     }
 
-    &__item{
-        width: 100px;
-
-        &__tittle{}
-
-        &__content{
-
-            &__tittle{
-
-                &_span{}
-            }
-
-        }
-
-        &__text{}
+    &__tittle {
+      padding-top: 20px;
+      font-size: 30pt;
+      color: black;
+      line-height: 60px;
     }
 
-    &__bottomtext{}
+    &__text {
+      font-size: 20pt;
+      color: white;
+      line-height: 40px;
+    }
+  }
+}
+
+.steps {
+  padding-bottom: 100px;
+
+  &__tittle {
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &__tittle {
+      font-style: 20pt;
+      background-color: black;
+      color: white;
+      width: 345px;
+      text-align: center;
+    }
+
+    &__img {
+      padding-top: 40px;
+      padding-bottom: 30px;
+      height: 60px;
+      width: 60px;
+    }
+
+    &__name {
+      font-size: 18pt;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 16pt;
+      color: rgb(180, 180, 180);
+    }
+  }
+}
+
+.price {
+  &__tittle {
+    font-size: 30pt;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+  }
+
+  &__th {
+    height: 60px;
+    font-weight: normal;
+    background: black;
+    color: white;
+    border: 1px solid #dddddd;
+    font-size: 18pt;
+    text-align: center;
+
+    &_main {
+      padding-left: 40px;
+      width: 950px;
+      text-align: left;
+    }
+
+    &_foot {
+      font-size: 18pt;
+    }
+  }
+
+  &__tr {
+    justify-content: center;
+  }
+
+  &__td {
+    height: 60px;
+    border: 1px solid #dddddd;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16pt;
+
+    &_main {
+      text-align: left;
+      padding-left: 40px;
+      // font-weight: bold;
+    }
+  }
+
+  &__tfoot {
+    height: 70px;
+  }
+
+  &__textbottom {
+    font-size: 16pt;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+  }
+
+  &__bottom {
+    padding-top: 160px;
+    padding-bottom: 180px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__left {
+      &__tittle {
+        font-size: 20pt;
+        margin-bottom: 40px;
+      }
+
+      &__ul {
+        padding-left: 20px;
+      }
+
+      &__li {
+        font-size: 16pt;
+        padding-bottom: 10px;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+
+      &__text {
+        font-size: 16pt;
+        text-align: right;
+      }
+    }
+  }
 }
 
 .portfolio {
@@ -31,12 +186,493 @@
   }
 
   &__tittle {
+    padding-bottom: 40px;
+
+    font-size: 20pt;
   }
 
   &__item {
     display: flex;
+    gap: 20px;
+    // flex-wrap: wrap;
+
+    padding-bottom: 120px;
   }
 
   &__img {
+    width: 355px;
+    height: 202px;
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.items {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    padding-bottom: 50px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__tittle {
+      font-size: 16pt;
+      padding-bottom: 20px;
+
+      color: black;
+    }
+
+    &__img {
+      width: 440px;
+      height: 300px;
+    }
+  }
+}
+
+.realization {
+  padding-bottom: 180px;
+
+  &__tittle {
+    text-align: center;
+    font-size: 18pt;
+    padding-bottom: 40px;
+  }
+
+  &__img {
+    vertical-align: middle;
+  }
+
+  &__slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  &__mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  &__prev,
+  &__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  /* Position the "next button" to the right */
+  &__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Caption text */
+  &__text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  &__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    &:hover {
+      background-color: #717171;
+    }
+  }
+
+  /* Fading animation */
+  &__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+
+@media (max-width: 500px) {
+  br {
+    display: none;
+  }
+
+  .header {
+    &__portfolio {
+      &__content {
+        height: 180px;
+      }
+
+      &__tittle {
+        padding-top: 14px;
+        font-size: 14pt;
+
+        line-height: 25px;
+      }
+
+      &__text {
+        font-size: 8pt;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .steps {
+    padding-bottom: 50px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+
+    &__item {
+      height: 100%;
+
+      &__tittle {
+        font-style: 10pt;
+        width: 120px;
+      }
+
+      &__img {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: 20px;
+        width: 20px;
+      }
+
+      &__name {
+        font-size: 10pt;
+        padding-bottom: 15px;
+        width: 110px;
+      }
+
+      &__text {
+        font-size: 8pt;
+        width: 110px;
+      }
+    }
+  }
+
+  .price {
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 40px;
+    }
+
+    &__table {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__th {
+      height: 20px;
+      font-size: 10pt;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &_main {
+        padding-left: 10px;
+        width: 270px;
+      }
+
+      &_foot {
+        font-size: 10pt;
+      }
+    }
+
+    &__td {
+      height: 20px;
+      font-size: 10pt;
+
+      &_main {
+        font-size: 10pt;
+        padding-left: 10px;
+        font-weight: normal;
+      }
+    }
+
+    &__tfoot {
+      height: 30px;
+    }
+
+    &__bottom {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      flex-wrap: wrap;
+
+      &__left {
+        &__tittle {
+          font-size: 10pt;
+        }
+
+        &__ul {
+          padding-left: 10px;
+        }
+
+        &__li {
+          font-size: 10pt;
+        }
+      }
+
+      &__right {
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        line-height: 20px;
+
+        padding-right: 10px;
+
+        &__text {
+          font-size: 10pt;
+        }
+      }
+    }
+
+    &__textbottom {
+      font-size: 10pt;
+    }
+
+    &__real {
+      &__buttonbox {
+        &_tittle {
+          font-size: 12pt;
+        }
+      }
+    }
+  }
+
+  svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .portfolio {
+    &__items {
+    }
+
+    &__tittle {
+      padding-bottom: 20px;
+      font-size: 12pt;
+    }
+
+    &__item {
+      gap: 10px;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      width: 190px;
+    }
+  }
+
+  .realization {
+    padding-bottom: 50px;
+
+    &__tittle {
+      font-size: 12pt;
+      padding-bottom: 20px;
+    }
+
+    &__img {
+      vertical-align: middle;
+    }
+
+    &__slideshow-container {
+      box-sizing: border-box;
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    &__mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    &__prev,
+    &__next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+
+      /* On hover, add a black background color with a little bit see-through */
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    /* Position the "next button" to the right */
+    &__next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* Caption text */
+    &__text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* The dots/bullets/indicators */
+    &__dot {
+      cursor: pointer;
+      height: 5px;
+      width: 5px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+
+      &:hover {
+        background-color: #717171;
+      }
+    }
+
+    /* Fading animation */
+    &__fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  }
+
+  .items {
+    &__row {
+      justify-content: center;
+    }
+
+    &__box {
+      &__tittle {
+        font-size: 10pt;
+        padding-bottom: 10px;
+      }
+
+      &__img {
+        width: 280px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.object {
+  padding-bottom: 100px;
+
+  &__header {
+    padding-bottom: 140px;
+
+    &__subtittle {
+      padding-top: 90px;
+      color: #717171;
+      text-align: right;
+    }
+
+    &__tittle {
+      padding-top: 20px;
+      font-size: 20pt;
+    }
+
+    &__text {
+      padding-top: 20px;
+      font-size: 16pt;
+    }
+  }
+
+  &__item {
+    &__tittles {
+      display: flex;
+      gap: 633px;
+
+      &_new {
+        gap: 245px;
+      }
+    }
+
+    &__tittle {
+      padding-bottom: 20px;
+      font-size: 16pt;
+    }
+
+    &__box {
+      display: flex;
+      gap: 20px;
+      // flex-wrap: wrap;
+
+      padding-bottom: 60px;
+    }
+
+    &__img {
+      width: 356px;
+      height: 250px;
+      // &:hover {
+      //   transform: scale(1.5);
+      //   box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+      // }
+    }
   }
 }

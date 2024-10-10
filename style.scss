@@ -1,6 +1,9 @@
 @import "./MainPage/mainPage";
 @import "./PORTFOLIO/Portfolio";
-
+@import "./about/about";
+@import "./contacts/contacts";
+@import "./projects/realization";
+@import "./realization/real";
 
 @font-face {
   font-family: "Bahnschrift";
@@ -27,4 +30,15 @@
 body {
   font-family: "Bahnschrift", sans-serif;
   line-height: 30px;
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 15px;
+  }
+
+  .center {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
