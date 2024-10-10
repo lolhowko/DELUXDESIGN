@@ -77,7 +77,6 @@
     &__items {
       display: flex;
       gap: 20px;
-      flex-wrap: wrap;
     }
 
     &__img {
@@ -172,6 +171,7 @@
 
       &__items {
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       &__img {

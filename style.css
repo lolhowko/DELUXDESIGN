@@ -299,7 +299,6 @@
 
 .reviews {
   padding-top: 180px;
-  padding-bottom: 180px;
 }
 .reviews__tittle {
   font-size: 18pt;
@@ -308,6 +307,7 @@
 }
 
 .articles {
+  padding-top: 180px;
   padding-bottom: 180px;
 }
 .articles__tittle {
@@ -1720,7 +1720,6 @@
 .real__box__items {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 .real__box__img {
   height: 450px;
@@ -1793,6 +1792,7 @@
   }
   .real__box__items {
     justify-content: center;
+    flex-wrap: wrap;
   }
   .real__box__img {
     height: 250px;
