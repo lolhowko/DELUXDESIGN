@@ -238,6 +238,10 @@
      -moz-user-select: none;
           user-select: none;
 }
+.projects__prev__img, .projects__next__img {
+  height: 40px;
+  width: 40px;
+}
 .projects__prev {
   margin-left: -60px;
 }
