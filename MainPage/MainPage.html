@@ -468,13 +468,6 @@
 
     <footer class="footer center">
       <div class="footer__left__box">
-        <!-- <a href="./MainPage.html" class="footer__logo">
-          <img
-            src="/img/logo.png"
-            alt="logo footer"
-            class="footer__logo__img"
-          />
-        </a> -->
         <!-- <button class="header__logo"> -->
         <a href="./MainPage.html" class="footer__logo"> DELUXDESIGN </a>
         <!-- </button> -->
@@ -499,7 +492,14 @@
                 </p>
 
                 <!-- Форма обратной связи -->
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <!-- Replace with your Access Key -->
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="YOUR_ACCESS_KEY_HERE"
+                  />
+
                   <!-- Каждый input для выравнивания вкладываем в блок input-box -->
                   <div class="popup__input-box">
                     <input type="text" placeholder="Ваше имя" />
@@ -549,7 +549,7 @@
             <a
               href="mailto:info@deluxedesign.ru"
               class="footer__text__link footer__text__link_num"
-              >info@deluxedesign.ru</a
+              >info@deluxdesign.ru</a
             >
           </div>
           <div class="footer__box">
@@ -557,7 +557,7 @@
             <a
               href="mailto:partner@deluxedesign.ru"
               class="footer__text__link footer__text__link_num"
-              >partner@deluxedesign.ru</a
+              >partner@deluxdesign.ru</a
             >
           </div>
           <div class="footer__box">
