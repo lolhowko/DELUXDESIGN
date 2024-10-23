@@ -523,6 +523,7 @@
   .header__top {
     margin-bottom: 30px;
     flex-wrap: wrap-reverse;
+    justify-content: center;
   }
   .header__top__tittle {
     display: none;
@@ -534,16 +535,15 @@
   }
   .header__logo__text {
     font-size: 20pt;
-    letter-spacing: -2px;
-  }
-  .header__services {
-    padding-left: 0px;
+    right: 0px;
+    position: unset;
   }
   .header__right {
     text-align: center;
   }
   .header__right__links {
     padding-left: 5px;
+    position: unset;
   }
   .header__right__link {
     font-size: 6pt;
