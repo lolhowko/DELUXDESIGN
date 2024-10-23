@@ -662,10 +662,11 @@
     }
 
     &__logo {
+      position: unset;
+
       &__text {
-        font-size: 20pt;
+        font-size: 18pt;
         right: 0px;
-        position: unset;
       }
     }
 
@@ -685,9 +686,12 @@
 
         &__button {
           height: 20px;
-          width: 80px;
-          padding-left: 3px;
-          padding-right: 3px;
+          width: 60px;
+          padding-left: 1px;
+          padding-right: 1px;
+          font-size: 18pt;
+          display: flex;
+          align-items: center;
 
           &:hover {
             transform: scale(1.1);
@@ -753,7 +757,7 @@
 
       &__img {
         height: 190px;
-        width: 180px;
+        width: 170px;
       }
 
       &__tittle {
@@ -797,7 +801,7 @@
       }
 
       &__img {
-        width: 180px;
+        width: 170px;
         height: 150px;
       }
     }
