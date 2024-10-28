@@ -35,7 +35,7 @@
 .header__right__links {
   display: flex;
   background-color: rgb(0, 0, 0);
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 15px;
   position: absolute;
   right: 5px;
@@ -61,7 +61,7 @@
   border: none;
   background: white;
   position: relative;
-  right: 489px;
+  right: 470px;
 }
 .header__logo__text {
   font-size: 39pt;
@@ -100,11 +100,10 @@
 }
 .header__content__img {
   height: 500px;
-  width: 850px;
+  width: 50%;
 }
 
 .content {
-  padding-top: 50px;
   padding-bottom: 150px;
 }
 .content__tittle {
@@ -114,7 +113,10 @@
 .content__text {
   font-size: 14pt;
   padding-bottom: 90px;
-  width: 1200px;
+  max-width: 1200px;
+  line-height: 35px;
+  text-align: left;
+  align-items: center;
 }
 .content__text_2 {
   padding-bottom: 150px;
@@ -134,20 +136,20 @@
 }
 .content__top__tittle {
   font-size: 18pt;
+  line-height: 22px;
 }
 .content__top__button {
   border: none;
-  font-size: 16pt;
   background-color: #d2d2d2;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   text-align: end;
 }
 .content__top__button__link {
   text-decoration: none;
   color: black;
   padding-right: 20px;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 .content__top__button:hover {
   background-color: #aaaaaa;
@@ -160,11 +162,10 @@
 }
 .content__items__tittles {
   display: flex;
-  gap: 30px;
+  gap: 72px;
   font-size: 18pt;
   padding-bottom: 20px;
   text-align: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .content__items__imgs {
@@ -172,7 +173,6 @@
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
-  align-items: center;
 }
 .content__items__imgs__box {
   display: flex;
@@ -180,7 +180,7 @@
   flex-wrap: wrap;
 }
 .content__bottombutton {
-  margin-top: 40px;
+  margin-top: 20px;
   padding-left: 560px;
   padding-right: 20px;
   border: none;
@@ -188,6 +188,7 @@
   background-color: #d2d2d2;
   padding-top: 12px;
   padding-bottom: 12px;
+  align-items: center;
 }
 .content__bottombutton__text {
   text-decoration: none;
@@ -200,8 +201,8 @@
 .projects {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
   padding-bottom: 180px;
+  gap: 208px;
   flex-wrap: wrap;
   /* Slideshow container */
   /* Next & previous buttons */
@@ -280,7 +281,7 @@
   padding-bottom: 40px;
 }
 .partners__tittle {
-  padding-bottom: 120px;
+  padding-bottom: 30px;
   font-size: 18pt;
   color: white;
   text-align: center;
@@ -288,17 +289,20 @@
 .partners__items {
   display: flex;
   flex-direction: column;
-  gap: 94px;
   flex-wrap: wrap;
 }
 .partners__items__box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
 }
 .partners__item {
-  height: 55px;
+  height: 44px;
+  padding-top: 94px;
+}
+.partners__item_2 {
+  height: 94px;
+  padding-top: 67px;
 }
 
 .reviews {
@@ -313,9 +317,11 @@
 .articles {
   padding-top: 180px;
   padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
 }
 .articles__tittle {
-  font-size: 18pt;
+  font-size: 20pt;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -324,7 +330,7 @@
   gap: 150px;
   flex-wrap: wrap;
 }
-.articles__box__text {
+.articles__box__tittle {
   font-size: 18pt;
 }
 .articles__box__imgs {
@@ -544,7 +550,7 @@
     text-align: center;
   }
   .header__right__links {
-    padding-left: 5px;
+    padding-left: 15px;
     position: unset;
   }
   .header__right__link {
@@ -655,6 +661,8 @@
   }
   .projects {
     padding-bottom: 50px;
+    justify-content: center;
+    gap: 40px;
     /* Slideshow container */
     /* Next & previous buttons */
   }
@@ -694,11 +702,12 @@
     padding-bottom: 40px;
     font-size: 12pt;
   }
-  .partners__items {
-    gap: 30px;
+  .partners__items__box {
+    justify-content: space-around;
   }
   .partners__item {
-    height: 30px;
+    height: 25px;
+    padding-top: 20px;
   }
   .reviews {
     padding-top: 50px;
@@ -709,6 +718,7 @@
     padding-bottom: 20px;
   }
   .articles {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
   .articles__tittle {
@@ -717,6 +727,7 @@
   }
   .articles__box {
     gap: 30px;
+    justify-content: center;
   }
   .articles__box__tittle {
     font-size: 8pt;
